@@ -3,23 +3,52 @@ html(lang='en')
   head
     title= title
     meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
     style= css
-  body
-    .header
-      h1: a(href='/') Paul Nechifor
+  body: .header: :markdown-it
 
-      p Hi. I'm a software developer currently living in London.
+    # [Paul Nechifor](/)
 
-      h2 Projects
+    Hi. I’m a software developer currently living in London.
 
-      p
-        | You can see a listing of <a href='#'>all my projects</a> here on my
-        | site or on <a
-        | href='https://github.com/paul-nechifor?tab=repositories'>GitHub</a>.
+    ## Projects
 
-      p You can view all of my projects on <a href='https://github.com/paul-nechifor'>GitHub</a>.
+    You can see a listing of [all my projects](#) here on my site or on
+    [GitHub][github-repos].
 
-      h2 Contact
+    Probably the most successful project of mine is [Ohmu][ohmu], a tool for
+    visualising space usage in your terminal.
 
-      p My email address is <code>paul@nechifor.net</code>.
+    I’m working on my own programming language called [LemonCake][lemon-cake].
+
+    I like creating my own games, but I’ve failed at finishing anything of
+    significance. Some examples are: [TorusCycle][torus-cycle], [chess
+    puzzles][chess-puzzles], [1930][1930], and [Makawa][makawa].
+
+    I’ve created Reddit bots for [correcting spelling][mayhaps-you-meant],
+    [generating word clouds][reddit-cloud], [summarizing long
+    comments][reddit-tldr], and [detecting pairs][pair-detector].
+
+    I’m interested in **[constructed scripts][conscripts]**. I’ve created
+    [Sidrem][sidrem] and [Tinutok][tinutok].
+
+    I publish my [dotfiles][dotfiles].
+
+    ## Contact
+
+    My email address is `paul@nechifor.net`.
+
+    [1930]: https://github.com/paul-nechifor/1930
+    [chess-puzzles]: https://github.com/paul-nechifor/chess-puzzles
+    [conscripts]: http://www.omniglot.com/conscripts/english.htm
+    [dotfiles]: https://github.com/paul-nechifor/dotfiles
+    [github-repos]: https://github.com/paul-nechifor?tab=repositories
+    [lemon-cake]: https://github.com/paul-nechifor/lemon-cake
+    [makawa]: https://github.com/paul-nechifor/makawa
+    [mayhaps-you-meant]: https://github.com/paul-nechifor/mayhaps-you-meant
+    [ohmu]: https://github.com/paul-nechifor/ohmu
+    [pair-detector]: https://github.com/paul-nechifor/pair-detector
+    [reddit-cloud]: https://github.com/paul-nechifor/reddit-cloud
+    [reddit-tldr]: https://github.com/paul-nechifor/reddit-tldr
+    [sidrem]: http://nechifor.net/sidrem
+    [tinutok]: https://github.com/paul-nechifor/tinutok
+    [torus-cycle]: https://github.com/paul-nechifor/torus-cycle

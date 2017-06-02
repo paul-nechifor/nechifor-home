@@ -1,16 +1,32 @@
 {
   "name": "nechifor-home",
-  "description": "Paul Nechifor’s homepage.",
   "version": "0.0.0",
+  "description": "Paul Nechifor’s home page.",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-webserver": "^0.9.1",
+    "jstransformer-markdown-it": "^2.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "build": "gulp build",
     "start": "gulp"
   },
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-pug": "^3.1.0",
-    "gulp-stylus": "^2.6.0",
-    "gulp-webserver": "^0.9.1",
-    "jstransformer-markdown-it": "^2.0.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul-nechifor/nechifor-home.git"
+  },
+  "keywords": [
+    "Paul",
+    "Nechifor"
+  ],
+  "author": "Paul Nechifor <paul@nechifor.net> (http://nechifor.net/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paul-nechifor/nechifor-home/issues"
+  },
+  "private": true,
+  "homepage": "https://github.com/paul-nechifor/nechifor-home#readme"
 }

@@ -4,6 +4,7 @@
   "description": "Paul Nechifor’s home page.",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-pug": "^3.3.0",
     "gulp-stylus": "^2.6.0",
     "gulp-webserver": "^0.9.1",

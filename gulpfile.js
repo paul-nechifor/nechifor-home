@@ -1,5 +1,6 @@
 var fs = require('fs');
 var gulp = require('gulp');
+var htmlmin = require('gulp-htmlmin');
 var pug = require('gulp-pug');
 var webserver = require('gulp-webserver');
 
@@ -8,6 +9,7 @@ gulp.task('default', ['html', 'webserver', 'watch']);
 gulp.task('html', function () {
   return gulp.src('index.pug')
   .pipe(pug({}))
+  .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest('build'));
 });
 

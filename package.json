@@ -2,7 +2,10 @@
   "name": "nechifor-home",
   "version": "0.0.0",
   "description": "Paul Nechifor’s home page.",
-  "dependencies": {
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-pug": "^3.3.0",
@@ -13,7 +16,8 @@
   },
   "scripts": {
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "test": "eslint *.js"
   },
   "repository": {
     "type": "git",

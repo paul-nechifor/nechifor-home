@@ -10,4 +10,4 @@ Start the server and watch for changes:
 
 ## License
 
-MIT
+ISC

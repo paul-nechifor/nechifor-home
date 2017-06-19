@@ -3,8 +3,19 @@ html(lang='en')
   head
     title= title
     meta(charset='utf-8')
-    style= css
-  body: .header: :markdown-it
+    style: :stylus(compress=true)
+      body
+        font-size 1.2em
+        line-height 1.4
+      .header
+        margin 0 auto
+        max-width 600px
+      a
+        text-decoration none
+        &:hover
+          text-decoration underline
+
+  body: .header: :markdown-it(compress=true)
 
     # [Paul Nechifor](/)
 

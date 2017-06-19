@@ -10,12 +10,12 @@ gulp.task('html', function () {
   return gulp.src('index.pug')
   .pipe(pug({}))
   .pipe(htmlmin({collapseWhitespace: true}))
-  .pipe(gulp.dest('build'));
+  .pipe(gulp.dest('dist'));
 });
 
 gulp.task('webserver', function () {
   var port = parseInt(process.env.port || '8080', 10);
-  gulp.src('build')
+  gulp.src('dist')
   .pipe(webserver({livereload: true, open: true, port: port, host: '0.0.0.0'}));
 });
 

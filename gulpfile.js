@@ -5,6 +5,8 @@ const webserver = require('gulp-webserver');
 
 gulp.task('default', ['html', 'webserver', 'watch']);
 
+gulp.task('build', ['html']);
+
 gulp.task('html', () => {
   gulp.src('index.pug')
     .pipe(pug({}))

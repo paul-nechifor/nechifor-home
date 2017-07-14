@@ -11,67 +11,79 @@ html(lang='en')
       body
         font-size 1.2em
         line-height 1.4
-      .header
+      .header, .footer
         margin 0 auto
         max-width 600px
       a
         text-decoration none
         &:hover
           text-decoration underline
+      .footer
+        padding-top 5px
+        color #999
+        a
+          color #aaa
 
-  body: .header: :markdown-it
+  body
+    .header: :markdown-it
+      # [Paul Nechifor](/)
 
-    # [Paul Nechifor](/)
+      Hi. I’m a software developer currently living in London.
 
-    Hi. I’m a software developer currently living in London.
+      ## Projects
 
-    ## Projects
+      You can see a listing of **[all my projects](/projects)** here on my site
+      or on [GitHub][github-repos].
 
-    You can see a listing of **[all my projects](/projects)** here on my site or
-    on [GitHub][github-repos].
+      Probably the most successful project of mine is [Ohmu][ohmu], a tool for
+      visualising space usage in your terminal.
 
-    Probably the most successful project of mine is [Ohmu][ohmu], a tool for
-    visualising space usage in your terminal.
+      I’m working on my own programming language called
+      [LemonCake](/lemon-cake).
 
-    I’m working on my own programming language called [LemonCake](/lemon-cake).
+      I like creating my own games, but I’ve failed at finishing anything of
+      significance. Some examples are: [TorusCycle](/torus-cycle), [chess
+      puzzles](/chess-puzzles), [1930][1930], and [Makawa][makawa].
 
-    I like creating my own games, but I’ve failed at finishing anything of
-    significance. Some examples are: [TorusCycle](/torus-cycle), [chess
-    puzzles](/chess-puzzles), [1930][1930], and [Makawa][makawa].
+      I’ve created Reddit bots for [correcting
+      spelling](/reddit-spellchecking-bot), [generating word
+      clouds](/reddit-wordcloud-bot), [summarizing long
+      comments](/reddit-summarization-bot), and [detecting
+      pairs][pair-detector].
 
-    I’ve created Reddit bots for [correcting
-    spelling](/reddit-spellchecking-bot), [generating word
-    clouds](/reddit-wordcloud-bot), [summarizing long
-    comments](/reddit-summarization-bot), and [detecting pairs][pair-detector].
+      See my [presentations](/presentations).
 
-    See my [presentations](/presentations).
+      I publish my [dotfiles](/dotfiles).
 
-    I publish my [dotfiles](/dotfiles).
+      ## Posts
 
-    ## Posts
+      1. [My brain on Git](/my-brain-on-git)
 
-    1. [My brain on Git](/my-brain-on-git)
+      ## Hobbies
 
-    ## Hobbies
+      I’m interested in [constructed scripts][conscripts]. I’ve created
+      [Sidrem](/sidrem) and [Tinutok][tinutok].
 
-    I’m interested in [constructed scripts][conscripts]. I’ve created
-    [Sidrem](/sidrem) and [Tinutok][tinutok].
+      See what I consider the [best black metal
+      albums](/best-black-metal-albums).
 
-    See what I consider the [best black metal albums](/best-black-metal-albums).
+      See my Instagram account for [my origami creations][instagram].
 
-    See my Instagram account for [my origami creations][instagram].
+      ## Contact
 
-    ## Contact
+      My email address is `paul@nechifor.net`.
 
-    My email address is `paul@nechifor.net`.
+      [1930]: https://github.com/paul-nechifor/1930
+      [conscripts]: http://www.omniglot.com/conscripts/english.htm
+      [dotfiles]: https://github.com/paul-nechifor/dotfiles
+      [github-repos]: https://github.com/paul-nechifor?tab=repositories
+      [instagram]: https://www.instagram.com/paulnechifor/
+      [makawa]: https://github.com/paul-nechifor/makawa
+      [ohmu]: https://github.com/paul-nechifor/ohmu
+      [pair-detector]: https://github.com/paul-nechifor/pair-detector
+      [tinutok]: https://github.com/paul-nechifor/tinutok
+      [torus-cycle]: https://github.com/paul-nechifor/torus-cycle
 
-    [1930]: https://github.com/paul-nechifor/1930
-    [conscripts]: http://www.omniglot.com/conscripts/english.htm
-    [dotfiles]: https://github.com/paul-nechifor/dotfiles
-    [github-repos]: https://github.com/paul-nechifor?tab=repositories
-    [instagram]: https://www.instagram.com/paulnechifor/
-    [makawa]: https://github.com/paul-nechifor/makawa
-    [ohmu]: https://github.com/paul-nechifor/ohmu
-    [pair-detector]: https://github.com/paul-nechifor/pair-detector
-    [tinutok]: https://github.com/paul-nechifor/tinutok
-    [torus-cycle]: https://github.com/paul-nechifor/torus-cycle
+    .footer
+      small.links: :markdown-it
+        [Projects](/projects) • [Twitter](https://twitter.com/PaulNechifor)

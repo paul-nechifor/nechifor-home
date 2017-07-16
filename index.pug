@@ -11,21 +11,22 @@ html(lang='en')
       body
         font-size 1.2em
         line-height 1.4
-      .header, .footer
+      header, footer
         margin 0 auto
         max-width 600px
       a
         text-decoration none
         &:hover
           text-decoration underline
-      .footer
-        padding-top 5px
-        color #999
-        a
-          color #aaa
+      footer
+        padding-top 0.5em
+        small
+          color #999
+          a
+            color #888
 
   body
-    .header: :markdown-it
+    header: :markdown-it
       # [Paul Nechifor](/)
 
       Hi. I’m a software developer currently living in London.
@@ -51,11 +52,9 @@ html(lang='en')
       comments](/reddit-summarization-bot), and [detecting
       pairs][pair-detector].
 
-      See my [presentations](/presentations).
-
       I publish my [dotfiles](/dotfiles).
 
-      ## Posts
+      ## [Blog](/blog)
 
       1. [My brain on Git](/my-brain-on-git)
 
@@ -84,6 +83,8 @@ html(lang='en')
       [tinutok]: https://github.com/paul-nechifor/tinutok
       [torus-cycle]: https://github.com/paul-nechifor/torus-cycle
 
-    .footer
-      small.links: :markdown-it
-        [Projects](/projects) • [Twitter](https://twitter.com/PaulNechifor)
+    footer
+      small: :markdown-it
+        [Blog](/blog) •
+        [Projects](/projects) •
+        [Twitter](https://twitter.com/PaulNechifor)

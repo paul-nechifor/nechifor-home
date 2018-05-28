@@ -4,7 +4,7 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     title Paul Nechifor
-    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
     meta(name='description', content='Paul Nechifor’s home page and list of projects.')
     link(rel='apple-touch-icon', href='/favicon152.png')
 
@@ -12,14 +12,14 @@ html(lang='en')
       body
         font-size 1.2em
         line-height 1.4
-      header, footer
+      header, .footer
         margin 0 auto
         max-width 600px
       a
         text-decoration none
         &:hover
           text-decoration underline
-      footer
+      .footer
         padding-top 0.5em
         small
           color #999
@@ -80,7 +80,10 @@ html(lang='en')
       [tinutok]: https://github.com/paul-nechifor/tinutok
       [torus-cycle]: https://github.com/paul-nechifor/torus-cycle
 
-    footer
+    .footer
+      :markdown-it
+        [View the Git source.](https://github.com/paul-nechifor/nechifor-home)
+
       small: :markdown-it
         [Blog](/blog) •
         [Projects](/projects) •

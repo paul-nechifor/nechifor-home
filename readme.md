@@ -1,3 +1,7 @@
+# This repository has been moved to [gitlab.com/paul-nechifor/nechifor-home](http://gitlab.com/paul-nechifor/nechifor-home).
+
+Old readme:
+
 # Nechifor Home
 
 Paul Nechifor’s homepage.
